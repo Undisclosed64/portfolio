@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Open+Sans:wght@400;500;600;700;800&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Open Sans", sans-serif;
 }
 nav {
   display: flex;
@@ -73,11 +76,38 @@ nav {
 }
 main {
   /* padding: 10em; fine for laptop size*/
-  background-color: rgb(224, 116, 14);
-  padding: 5em;
+  /* padding: 5em 1.1em 4em 1.1em;*/
 }
-#homeSectionBtn {
-  padding: 0.6em 1.5em 0.6em 1.5em;
-  margin: 1em;
-  margin-left: 0;
+main #home {
+  padding: 5em 1.1em 4em 1.1em;
+}
+main #home .introduction {
+  font-family: "Fira Mono", monospace;
+  color: #2ecfaa;
+  margin-bottom: 1em;
+}
+
+#home .name,
+.profession {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.3em;
+}
+#home .elaborateIntro,
+.introduction {
+  /* max-width: 600px;*/
+  font-size: 1.1rem;
+  margin-top: 1em;
+  line-height: 30px;
+  text-align: justify;
+}
+#home #btnContact {
+  margin-top: 2.5em;
+  padding: 1.1em;
+  width: 15em;
+  font-family: "Fira Mono", monospace;
+  border: 1px solid #2ecfaa;
+  border-radius: 3px;
+  background-color: white;
+  font-size: 1rem;
 }
