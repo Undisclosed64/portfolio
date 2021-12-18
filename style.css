@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+}
+#brand {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+}
+.nav-links ul {
+  display: flex;
+}
+.nav-links li {
+  list-style: none;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+}
+.nav-links li:hover {
+  background-color: #555;
+}
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+.toggle-button .bar {
+  height: 2px;
+  width: 100%;
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+@media (max-width: 450px) {
+  .toggle-button {
+    display: flex;
+  }
+  .nav-links {
+    display: none;
+    width: 100%;
+  }
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-links ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav-links li {
+    text-align: center;
+  }
+  .nav-links li a {
+    padding: 0.5rem 1rem;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+}
+main {
+  /* padding: 10em; fine for laptop size*/
+  background-color: rgb(224, 116, 14);
+  padding: 5em;
+}
+#homeSectionBtn {
+  padding: 0.6em 1.5em 0.6em 1.5em;
+  margin: 1em;
+  margin-left: 0;
+}
