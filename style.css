@@ -93,13 +93,18 @@ main #home .introduction {
   font-weight: 700;
   margin-bottom: 0.3em;
 }
+.verticalLinks {
+  display: none;
+}
 #home .elaborateIntro,
 .introduction {
   /* max-width: 600px;*/
   font-size: 1.1rem;
+  text-align: justify;
+}
+#home .elaborateIntro {
   margin-top: 1em;
   line-height: 30px;
-  text-align: justify;
 }
 #home #btnContact {
   margin-top: 2.5em;
@@ -110,4 +115,74 @@ main #home .introduction {
   border-radius: 3px;
   background-color: white;
   font-size: 1rem;
+}
+@media (min-width: 400px) {
+  main #home {
+    padding-right: 2em;
+    padding-left: 2em;
+  }
+  #home .name,
+  .profession {
+    font-size: 1.9rem;
+  }
+}
+@media (min-width: 568px) {
+  main #home {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+  #home .name,
+  .profession {
+    font-size: 2.5rem;
+    margin: 0 !important;
+  }
+  #home .elaborateIntro {
+    margin-top: 1.5em;
+  }
+}
+@media (min-width: 768px) {
+  main #home {
+    padding-right: 7em;
+    padding-left: 8em;
+  }
+  #home .elaborateIntro {
+    max-width: 600px;
+  }
+  #home .name,
+  .profession {
+    font-size: 3rem;
+  }
+  .verticalLinks {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: absolute;
+    left: 2.5em;
+    top: 17em;
+  }
+  .verticalLinks a {
+    text-decoration: none;
+    padding-bottom: 2em;
+  }
+  .pointing-line {
+    height: 150px;
+    background-color: orange;
+    width: 2px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1024px) {
+  main #home {
+    padding-left: 12em;
+  }
+  #home .name,
+  .profession {
+    font-size: 4rem;
+  }
+  #home .elaborateIntro {
+    max-width: 600px;
+  }
+  .verticalLinks {
+    left: 3em;
+  }
 }
