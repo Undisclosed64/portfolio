@@ -77,9 +77,11 @@ nav {
 main {
   /* padding: 10em; fine for laptop size*/
   /* padding: 5em 1.1em 4em 1.1em;*/
+  padding: 5em 1.1em 4em 1.1em;
 }
 main #home {
-  padding: 5em 1.1em 4em 1.1em;
+  padding-bottom: 8em;
+  /*padding: 5em 1.1em 4em 1.1em;*/
 }
 main #home .introduction {
   font-family: "Fira Mono", monospace;
@@ -93,18 +95,23 @@ main #home .introduction {
   font-weight: 700;
   margin-bottom: 0.3em;
 }
-.verticalLinks {
+#home .verticalLinks {
   display: none;
 }
 #home .elaborateIntro,
 .introduction {
   /* max-width: 600px;*/
+  /*font-size: 1.1rem;
+  text-align: justify;*/
+}
+p {
   font-size: 1.1rem;
+  line-height: 30px;
   text-align: justify;
 }
 #home .elaborateIntro {
   margin-top: 1em;
-  line-height: 30px;
+  /*line-height: 30px;*/
 }
 #home #btnContact {
   margin-top: 2.5em;
@@ -116,8 +123,35 @@ main #home .introduction {
   background-color: white;
   font-size: 1rem;
 }
+#about .header {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+#about .about-header {
+  margin-bottom: 1.5em;
+  font-size: 1.5rem;
+}
+#about .headerHorizontalLine {
+  width: 8em;
+  height: 2px;
+  background-color: hsl(36, 72%, 48%);
+  position: relative;
+  top: 1.1em;
+  margin-left: 0.4em;
+}
+#about .girl {
+  width: 18em;
+  margin-top: 3em;
+  border: 2px solid springgreen;
+  border-radius: 5px;
+}
 @media (min-width: 400px) {
-  main #home {
+  /*main #home {
+    padding-right: 2em;
+    padding-left: 2em;
+  }*/
+  main {
     padding-right: 2em;
     padding-left: 2em;
   }
@@ -127,7 +161,11 @@ main #home .introduction {
   }
 }
 @media (min-width: 568px) {
-  main #home {
+  /* main #home {
+    padding-left: 3em;
+    padding-right: 3em;
+  }*/
+  main {
     padding-left: 3em;
     padding-right: 3em;
   }
@@ -139,11 +177,27 @@ main #home .introduction {
   #home .elaborateIntro {
     margin-top: 1.5em;
   }
+  #about .headerHorizontalLine {
+    width: 12em;
+    margin-left: 0.6em;
+  }
+  #about .girl {
+    width: 22em;
+  }
 }
 @media (min-width: 768px) {
-  main #home {
+  /*main #home {
     padding-right: 7em;
     padding-left: 8em;
+  }*/
+  main {
+    padding-left: 8em;
+    /*   padding-right: 7em;*/
+    padding-right: 0;
+  }
+  main #home {
+    padding-bottom: 10em;
+    padding-right: 7em; /*+*/
   }
   #home .elaborateIntro {
     max-width: 600px;
@@ -152,7 +206,7 @@ main #home .introduction {
   .profession {
     font-size: 3rem;
   }
-  .verticalLinks {
+  #home .verticalLinks {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -160,21 +214,38 @@ main #home .introduction {
     left: 2.5em;
     top: 17em;
   }
-  .verticalLinks a {
+  #home .verticalLinks a {
     text-decoration: none;
     padding-bottom: 2em;
   }
-  .pointing-line {
+  #home .pointing-line {
     height: 150px;
     background-color: orange;
     width: 2px;
     margin: 0 auto;
   }
+  main #about {
+    padding-right: 2em;
+  }
+  #about .headerHorizontalLine {
+    width: 15em;
+  }
+  #about .about-explanation {
+    display: flex;
+    justify-content: space-between;
+  }
+  #about .girl {
+    margin: 0.5em 0 0 2em;
+  }
 }
 @media (min-width: 1024px) {
-  main #home {
+  /*main #home {
+    padding-left: 12em;
+  }*/
+  main {
     padding-left: 12em;
   }
+
   #home .name,
   .profession {
     font-size: 4rem;
@@ -182,7 +253,17 @@ main #home .introduction {
   #home .elaborateIntro {
     max-width: 600px;
   }
-  .verticalLinks {
+
+  #home .verticalLinks {
     left: 3em;
+  }
+  #about .headerHorizontalLine {
+    width: 18em;
+  }
+  main #about {
+    padding-right: 7em;
+  }
+  #about .girl {
+    margin-left: 3em;
   }
 }
