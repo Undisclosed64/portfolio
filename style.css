@@ -1,17 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Open+Sans:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
 }
+body {
+  background-color: #000000;
+  color: #ffffff;
+}
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
   color: white;
+  /*background-color: #151515;*/
 }
 #brand {
   font-size: 1.5rem;
@@ -85,7 +90,8 @@ main #home {
 }
 main #home .introduction {
   font-family: "Fira Mono", monospace;
-  color: #2ecfaa;
+  color: /*#2ecfaa*/ /*#f0a500*/ #f09000;
+
   margin-bottom: 1em;
 }
 
@@ -108,6 +114,7 @@ p {
   font-size: 1.1rem;
   line-height: 30px;
   text-align: justify;
+  color: #f0f0f0;
 }
 #home .elaborateIntro {
   margin-top: 1em;
@@ -118,10 +125,11 @@ p {
   padding: 1.1em;
   width: 15em;
   font-family: "Fira Mono", monospace;
-  border: 1px solid #2ecfaa;
+  border: 1px solid #f09000;
   border-radius: 3px;
-  background-color: white;
   font-size: 1rem;
+  background-color: #000000;
+  color: white;
 }
 #about .header {
   display: flex;
@@ -142,10 +150,44 @@ p {
 }
 #about .girl {
   width: 18em;
-  margin-top: 3em;
+  margin: 3em 0 3em 0;
   border: 2px solid springgreen;
   border-radius: 5px;
 }
+#about .skills-intro {
+  /* font-size: 1.2rem;
+  font-weight: 500;*/
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+#about .skills .skill-icon {
+}
+#about .skills .card-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+#about .skills .card-wrapper .card {
+  /*padding: 5em;*/
+  margin-bottom: 3em;
+  height: 20em;
+  width: 14em;
+  border: 1px solid #f0f0f0;
+  color: antiquewhite;
+  font-weight: 600;
+}
+#about .skills .card-wrapper .card .icon-wrapper {
+  padding: 3em;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(47, 49, 47);
+}
+#about .skills .card-wrapper .card .skillName-wrapper {
+  text-align: center;
+  margin-top: 2em;
+}
+
 @media (min-width: 400px) {
   /*main #home {
     padding-right: 2em;
@@ -183,6 +225,21 @@ p {
   }
   #about .girl {
     width: 22em;
+  }
+  #about .skills .card-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #about .skills .card-wrapper .card {
+    margin-bottom: 4em;
+  }
+}
+
+@media (min-width: 668px) {
+  #about .skills .card-wrapper {
+    padding-right: 3em;
+    padding-left: 3em;
   }
 }
 @media (min-width: 768px) {
@@ -237,6 +294,16 @@ p {
   #about .girl {
     margin: 0.5em 0 0 2em;
   }
+  #about .skills .card-wrapper {
+    padding-right: 2em;
+    padding-left: 2em;
+  }
+}
+@media (min-width: 848px) {
+  #about .skills .card-wrapper {
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 @media (min-width: 1024px) {
   /*main #home {
@@ -265,5 +332,14 @@ p {
   }
   #about .girl {
     margin-left: 3em;
+  }
+}
+@media (min-width: 1200px) {
+  #about .skills .card-wrapper {
+  }
+
+  #about .skills .card-wrapper .card {
+    margin: 1em;
+    margin-bottom: 4em;
   }
 }
