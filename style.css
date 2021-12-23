@@ -84,7 +84,8 @@ main {
   /* padding: 5em 1.1em 4em 1.1em;*/
   padding: 5em 1.1em 4em 1.1em;
 }
-main #home {
+main #home,
+#about {
   padding-bottom: 8em;
   /*padding: 5em 1.1em 4em 1.1em;*/
 }
@@ -131,7 +132,8 @@ p {
   background-color: #000000;
   color: white;
 }
-#about .header {
+#about .header,
+#projects .header {
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
@@ -140,7 +142,11 @@ p {
   margin-bottom: 1.5em;
   font-size: 1.5rem;
 }
-#about .headerHorizontalLine {
+#projects .projects-header {
+  font-size: 1.5rem;
+  margin-bottom: 2em;
+}
+.headerHorizontalLine {
   width: 8em;
   height: 2px;
   background-color: hsl(36, 72%, 48%);
@@ -173,7 +179,7 @@ p {
   margin-bottom: 3em;
   height: 20em;
   width: 14em;
-  border: 1px solid #f0f0f0;
+  border: 1px solid rgb(77, 75, 75);
   color: antiquewhite;
   font-weight: 600;
 }
@@ -181,11 +187,63 @@ p {
   padding: 3em;
   display: flex;
   justify-content: center;
-  background-color: rgb(47, 49, 47);
+  background-color: rgb(10, 10, 10);
 }
 #about .skills .card-wrapper .card .skillName-wrapper {
   text-align: center;
   margin-top: 2em;
+}
+.projects-container {
+  display: flex;
+  flex-direction: column;
+}
+.projectWrapperMain {
+  margin-bottom: 6em;
+}
+.project-wrapper {
+  background-color: rgb(10, 10, 10);
+  opacity: 0.9;
+  padding: 0.5em;
+  border-radius: 2px;
+}
+.project-view {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.project-img {
+  height: auto;
+  width: 260px;
+  margin-bottom: 3em;
+}
+.project-name {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+.explain {
+}
+.thingsUsed {
+  padding-top: 2em;
+}
+.projectCardBtns {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2em;
+}
+.projects-btn {
+  width: 50%;
+  padding: 0.6em;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  border-radius: 4px;
+}
+#viewSiteBtn {
+  margin-left: 1em;
+  background-color: #f09000;
+  color: black;
+  border: none;
 }
 
 @media (min-width: 400px) {
@@ -200,6 +258,21 @@ p {
   #home .name,
   .profession {
     font-size: 1.9rem;
+  }
+  .project-wrapper {
+    padding: 1em;
+  }
+  .project-img {
+    /* width: 320px;*/
+    width: 100%;
+  }
+  .project-name {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  .thingsUsed {
+    font-size: 1.1rem;
   }
 }
 @media (min-width: 568px) {
@@ -234,6 +307,16 @@ p {
   #about .skills .card-wrapper .card {
     margin-bottom: 4em;
   }
+  .project-name {
+    margin-bottom: 1.5em;
+  }
+  .projects-btn {
+    padding: 0.7em;
+    font-size: 1rem;
+  }
+  .projectWrapperMain {
+    margin-bottom: 8em;
+  }
 }
 
 @media (min-width: 668px) {
@@ -241,7 +324,14 @@ p {
     padding-right: 3em;
     padding-left: 3em;
   }
+  .projectCardBtns {
+    justify-content: center;
+  }
+  .projects-btn {
+    width: 10em;
+  }
 }
+
 @media (min-width: 768px) {
   /*main #home {
     padding-right: 7em;
@@ -298,11 +388,32 @@ p {
     padding-right: 2em;
     padding-left: 2em;
   }
+
+  main #projects {
+    padding-right: 6em;
+  }
+
+  /*
+  .project-wrapper {
+    position: relative;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(12, 1fr);
+    -webkit-box-align: center;
+    align-items: center;
+  }*/
 }
 @media (min-width: 848px) {
   #about .skills .card-wrapper {
     padding-right: 0;
     padding-left: 0;
+  }
+  .project-wrapper {
+    padding: 2em;
+  }
+  .thingsUsed {
+    display: flex;
+    justify-content: center;
   }
 }
 @media (min-width: 1024px) {
@@ -335,9 +446,6 @@ p {
   }
 }
 @media (min-width: 1200px) {
-  #about .skills .card-wrapper {
-  }
-
   #about .skills .card-wrapper .card {
     margin: 1em;
     margin-bottom: 4em;
