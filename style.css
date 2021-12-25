@@ -18,11 +18,11 @@ nav {
   color: white;
   /*background-color: #151515;*/
 }
-#brand {
+#brand-name {
   font-size: 1.5rem;
   margin: 0.5rem;
 }
-.nav-links ul {
+.nav-links {
   display: flex;
 }
 .nav-links li {
@@ -80,48 +80,55 @@ nav {
   }
 }
 main {
-  /*padding: 5em 1.1em 4em 1.1em;--*/
   padding: 5em 0 4em 0;
 }
 main #home,
 #about,
 #projects,
 #contact {
-  /* padding-bottom: 8em; for home,about --,included projects*/
   padding: 0 1.1em 8em 1.1em;
 }
-main #home .introduction {
+main #home .greeting {
   font-family: "Fira Mono", monospace;
   color: /*#2ecfaa*/ /*#f0a500*/ #f09000;
-
   margin-bottom: 1em;
 }
-
 #home .name,
 .profession {
   font-size: 1.6rem;
   font-weight: 700;
   margin-bottom: 0.3em;
 }
+#home .verticalLinks {
+  line-height: 4em;
+}
+#home .verticalLinks #lastVerticalLink {
+  margin-bottom: 1.2em;
+}
+#home .verticalLinks li {
+  list-style: none;
+}
 #home .verticalLinks a {
   text-decoration: none;
 }
+
 .fab,
 .far {
   font-size: 14px;
-  border: 2px solid #ffffff80;
+  border: 1px solid #a8b2d1;
   border-radius: 50%;
   padding: 8px;
 }
-.fa-github {
-  color: #ffffff80;
-}
+
+.fa-github,
 .fa-twitter,
 .fa-linkedin-in,
 .fa-envelope {
-  color: #ffffff80;
+  color: #a8b2d1;
 }
-
+#home .verticalLinks .pointing-line {
+  background-color: #a8b2d1;
+}
 #home .elaborateIntro,
 .introduction {
   /* max-width: 600px;*/
@@ -132,7 +139,6 @@ p {
   font-size: 1.1rem;
   line-height: 30px;
   text-align: justify;
-  color: #f0f0f0;
 }
 #home .elaborateIntro {
   margin-top: 1em;
@@ -152,14 +158,14 @@ p {
 p {
   color: #ffffff80;
 }
-#about .header,
-#projects .header,
-#contact .header {
+#about .sub-header,
+#projects .sub-header,
+#contact .sub-header {
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
 }
-#about .about-header {
+#about .sub-header .aboutMe {
   margin-bottom: 1.5em;
   font-size: 1.5rem;
 }
@@ -167,7 +173,7 @@ p {
   font-size: 1.5rem;
   margin-bottom: 2em;
 }
-.headerHorizontalLine {
+.subHeaderHorizontalLine {
   width: 8em;
   height: 2px;
   background-color: hsl(36, 72%, 48%);
@@ -175,7 +181,7 @@ p {
   top: 1.1em;
   margin-left: 0.4em;
 }
-#about .girl {
+#about .svgGirl img {
   width: 18em;
   margin: 3em 0 3em 0;
   border: 2px solid springgreen;
@@ -378,7 +384,7 @@ input:focus {
     width: 12em;
     margin-left: 0.6em;
   }
-  #about .girl {
+  #about .svgGirl img {
     width: 22em;
   }
   #about .skills .card-wrapper {
@@ -476,7 +482,7 @@ input:focus {
     display: flex;
     justify-content: space-between;
   }
-  #about .girl {
+  #about .svgGirl img {
     margin: 0.5em 0 0 2em;
   }
   #about .skills .card-wrapper {
@@ -549,7 +555,7 @@ input:focus {
   main #about {
     padding-right: 7em;
   }
-  #about .girl {
+  #about .svgGirl img {
     margin-left: 3em;
   }
   .contactContainer #contact form {

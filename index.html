@@ -11,54 +11,50 @@
 </head>
 <body>
         <nav>
-            <div id="brand">TA</div>
+        <div id="brand-name">Tahera<span class="dot"> .</span></div>
         <a href="#"class="toggle-button">
-            
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
-             </a>
+        </a>
 
-
-            <div class="nav-links">
-                <ul>
+                <ul class="nav-links">
                 <li class="home-link"><a href="#home">Home</a></li>
                 <li class="about-link"><a href="#about">About</a></li>
                 <li class="projects-link"><a href="#projects">Projects</a></li>
                 <li class="contact-link"><a href="#contact">Contact</a></li>
             </ul>
 
-            </div>
         </nav>
 
 <main>
 <section id="home">
-<p class="introduction">Hi, my name is </p>
+<p class="greeting">Hi, my name is </p>
 <h1 class="name">Tahera.</h1>
 <h1 class="profession">I am a web developer.</h1>
 
-<div class="verticalLinks">
-<a href="https://github.com/Undisclosed64"><i class="fab fa-github"></i></a>
-<a href="https://github.com/Undisclosed64"><i class="fab fa-twitter"></i></a>
-<a href="https://github.com/Undisclosed64"><i class="fab fa-linkedin-in"></i></a>
-<a href="https://github.com/Undisclosed64"><i class="far fa-envelope"></i></a>
+<ul class="verticalLinks">
+<li><a href="https://github.com/Undisclosed64"><i class="fab fa-github"></i></a></li>
+<li><a href="https://github.com/Undisclosed64"><i class="fab fa-twitter"></i></a></li>
+<li><a href="https://github.com/Undisclosed64"><i class="fab fa-linkedin-in"></i></a></li>
+<li id="lastVerticalLink"><a href="https://github.com/Undisclosed64"><i class="far fa-envelope"></i></a></li>
 
 <div class="pointing-line"></div>
-</div>
+</ul>
+
 <p class="elaborateIntro">I am a front end developer based in India.I love to create websites with modern outlook and perfect responsiveness. I believe that our work denotes who we are and I constantly strive in making my answer to who am I a better one.</p>
 <button id="btnContact">Contact me!</button>
 </section>
 
 <section id="about">
-
-<div class="header">
-    <h2 class="about-header">About Me</h2>
-    <span class="headerHorizontalLine"></span>
+<div class="sub-header">
+    <h2 class="aboutMe">About Me</h2>
+    <span class="subHeaderHorizontalLine"></span>
 </div> 
 
 <div class="about-explanation">
 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi voluptate quas tempore harum quos ipsum commodi beatae aut reiciendis deserunt, possimus, dolores nisi omnis iste consequuntur, suscipit quia perspiciatis error?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, reiciendis. Illum perspiciatis ducimus hic officia iusto, consequuntur porro animi quidem saepe quis aperiam nam nulla numquam in itaque! Nulla, facilis.</p>
-<div class="girlImg">
+<div class="svgGirl">
 <img src="./images/girl2.svg"class="girl"alt="">
 </div>
 </div>
@@ -208,11 +204,11 @@
     </div>
     <h1 class="reachOutLine">Reach out for a new project or just say hello  </h1>
 
-<form action="">
+<form action="https://formsubmit.co/b24c6bea3a5988c432297cb0feccc3e7" method="POST">
     <div class="sendMsgLine">Send me a message</div>
-    <input type="text"placeholder="Your Name">
-    <input type="text"placeholder="Your Email">
-    <input type="text"placeholder="Subject">
+    <input type="text"placeholder="Your Name"name="name">
+    <input type="text"placeholder="Your Email"name="emailID">
+    <input type="text"placeholder="Subject"name="subject">
     <textarea name="message" id="" cols="30" rows="10"></textarea>
 <button type="submit"id="submitBtn">Let's send!</button>
 </form>
@@ -222,8 +218,7 @@
 </main>
 
 
-
-
-    <script src="main.js"></script>
+   
+        
 </body>
 </html>
