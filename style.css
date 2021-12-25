@@ -103,9 +103,25 @@ main #home .introduction {
   font-weight: 700;
   margin-bottom: 0.3em;
 }
-#home .verticalLinks {
-  display: none;
+#home .verticalLinks a {
+  text-decoration: none;
 }
+.fab,
+.far {
+  font-size: 14px;
+  border: 2px solid #ffffff80;
+  border-radius: 50%;
+  padding: 8px;
+}
+.fa-github {
+  color: #ffffff80;
+}
+.fa-twitter,
+.fa-linkedin-in,
+.fa-envelope {
+  color: #ffffff80;
+}
+
 #home .elaborateIntro,
 .introduction {
   /* max-width: 600px;*/
@@ -132,6 +148,9 @@ p {
   font-size: 1rem;
   background-color: #000000;
   color: white;
+}
+p {
+  color: #ffffff80;
 }
 #about .header,
 #projects .header,
