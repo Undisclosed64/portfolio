@@ -11,22 +11,24 @@
 </head>
 <body>
         <nav>
-        <div id="brand-name">Tahera<span class="dot"> .</span></div>
+        <div id="brand-name">Tahera<span class="dot">.</span></div>
+        <div>
         <a href="#"class="toggle-button">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
         </a>
+    </div>
 
                 <ul class="nav-links">
-                <li class="home-link"><a href="#home">Home</a></li>
+                <li class="home-link"><a href="#home"class="navAnchorTag">Home</a></li>
                 <li class="about-link"><a href="#about">About</a></li>
                 <li class="projects-link"><a href="#projects">Projects</a></li>
                 <li class="contact-link"><a href="#contact">Contact</a></li>
             </ul>
 
         </nav>
-
+        <button onclick="topFunction()" id="btnToTop"><i class="fas fa-arrow-up"></i></button>
 <main>
 <section id="home">
 <p class="greeting">Hi, my name is </p>
@@ -35,14 +37,14 @@
 
 <ul class="verticalLinks">
 <li><a href="https://github.com/Undisclosed64"><i class="fab fa-github"></i></a></li>
-<li><a href="https://github.com/Undisclosed64"><i class="fab fa-twitter"></i></a></li>
-<li><a href="https://github.com/Undisclosed64"><i class="fab fa-linkedin-in"></i></a></li>
-<li id="lastVerticalLink"><a href="https://github.com/Undisclosed64"><i class="far fa-envelope"></i></a></li>
+<li><a href="https://twitter.com/alam_tahera"><i class="fab fa-twitter"></i></a></li>
+<li><a href="https://www.linkedin.com/in/tahera-alam-77a25a229/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3B8RyZbKVXRtC0hjH1OHDchQ%3D%3D"><i class="fab fa-linkedin-in"></i></a></li>
+<li id="lastVerticalLink"><a href="mailto:taheraalam532@gmail.com"><i class="far fa-envelope"></i></a></li>
 
 <div class="pointing-line"></div>
 </ul>
 
-<p class="elaborateIntro">I am a front end developer based in India.I love to create websites with modern outlook and perfect responsiveness. I believe that our work denotes who we are and I constantly strive in making my answer to who am I a better one.</p>
+<p class="elaborateIntro">I am a front end developer based in India. I love to create websites with modern outlook and perfect responsiveness. I believe that our work denotes who we are and I constantly strive in making my answer to who am I a better one.</p>
 <button id="btnContact">Contact me!</button>
 </section>
 
@@ -53,7 +55,7 @@
 </div> 
 
 <div class="about-explanation">
-<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi voluptate quas tempore harum quos ipsum commodi beatae aut reiciendis deserunt, possimus, dolores nisi omnis iste consequuntur, suscipit quia perspiciatis error?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, reiciendis. Illum perspiciatis ducimus hic officia iusto, consequuntur porro animi quidem saepe quis aperiam nam nulla numquam in itaque! Nulla, facilis.</p>
+<p>Hello! My name is tahera and I enjoy creating websites. I am a Humanities turned tech student. I completed my graduation on Decemeber,2021 and I want to a professional software developer. The word which best describes me is that I am a LEARNER. And this is the foremost reason why I chose technological field as my career. As a field like tech, demands continuous learning and improving ourselves, I found my life principle in that. I am also an avid reader and a nature lover. My primary interest includes reading and staring at the night sky!</p>
 <div class="svgGirl">
 <img src="./images/girl2.svg"class="girl"alt="">
 </div>
@@ -61,12 +63,12 @@
 
 
 <div class="skills">
-    <h3 class="skills-intro">Here are a few skills I have</h3>
+    <div class="skills-intro">Here are a few skills I have</div>
     <div class="card-wrapper">
 
     <div class="card">
         <div class="icon-wrapper">
-        <img src="./icons/html.png"class="skill-icon"id="jsIcon"alt="">
+          <i class="fab fa-html5"></i>
     </div>
     <div class="skillName-wrapper">
      <div class="skillName">HTML5</div>
@@ -75,7 +77,7 @@
 
 <div class="card">
     <div class="icon-wrapper">
-    <img src="./icons/css-code.png"class="skill-icon"id="cssIcon"alt="">
+        <i class="fab fa-css3"></i>
 </div>
 <div class="skillName-wrapper">
  <div class="skillName">CSS3</div>
@@ -84,7 +86,7 @@
 
 <div class="card">
     <div class="icon-wrapper">
-    <img src="./icons/js (1).png"class="skill-icon"id="jsIcon"alt="">
+        <i class="fab fa-js-square"></i>
 </div>
 <div class="skillName-wrapper">
  <div class="skillName">Javascript</div>
@@ -93,7 +95,7 @@
 
 <div class="card">
     <div class="icon-wrapper">
-    <img src="./icons/react.png"class="skill-icon"id="reactIcon"alt="">
+        <i class="fab fa-react"></i>
 </div>
 <div class="skillName-wrapper">
  <div class="skillName">React</div>
@@ -102,7 +104,7 @@
 
 <div class="card">
     <div class="icon-wrapper">
-    <img src="./icons/git.png"class="skill-icon"id="gitIcon"alt="">
+        <i class="fas fa-code-branch"></i>
 </div>
 <div class="skillName-wrapper">
  <div class="skillName">Git</div>
@@ -111,7 +113,7 @@
 
 <div class="card">
     <div class="icon-wrapper">
-    <img src="./icons/github.png"class="skill-icon"id="githubIcon"alt="">
+        <i class="fab fa-github"id="skillsSectionGithubIcon"></i>
 </div>
 <div class="skillName-wrapper">
  <div class="skillName">Github</div>
@@ -125,9 +127,9 @@
 
 
 <section id="projects">
-    <div class="header">
+    <div class="sub-header">
         <h2 class="projects-header">My Projects</h2>
-        <span class="headerHorizontalLine"></span>
+        <span class="subHeaderHorizontalLine"></span>
     </div>
 <div class="projects-container">
 
@@ -136,18 +138,19 @@
 
     <div class="project-view">
         <div class="project-name">Weatherly</div>
-    <img src="icons/weather.png"class="project-img" alt="">
+    <img src="images/weatherly.png"class="project-img" alt="weatherly-img">
 </div>
 <div class="project-description">
-    <div class="explain">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae maxime repellendus, doloribus explicabo sunt eaque ut culpa eveniet reprehenderit voluptatem eum sint consequuntur unde, doloremque tenetur esse ex fugit aliquam.</div>
+    <p class="explain">This is a weather informational website. It lets you search any location in the world and gives you real time weather data using Open Weather Map API.The purpose of this project was to get comfortable with API using async,await. It taught me how to utilise an API efficiently.</p>
 </div>
 <div class="thingsUsed">
-    <div class="used-things">HTML | CSS | JAVASCRIPT | API</div>
+    <p class="used-things">HTML | CSS | JAVASCRIPT | API</p>
 </div>
 </div>
 <div class="projectCardBtns">
-<button class="projects-btn">Source code</button>
-<button class="projects-btn"id="viewSiteBtn">View website</button>
+    <a href="https://github.com/Undisclosed64/weather-app"><button class="projects-btn">View code</button></a>
+    <a href="https://weather-janlo.netlify.app/"><button class="projects-btn"id="viewSiteBtn">View live</button>
+    </a>
 </div>
 </div>
 
@@ -155,18 +158,20 @@
 <div class="project-wrapper">
     <div class="project-view">
         <div class="project-name">Restaurent Page</div>
-    <img src="icons/restaurent.png"class="project-img" alt="">
+    <img src="icons/restaurent.png"class="project-img" alt="restaurent-page-img">
 </div>
 <div class="project-description">
-    <div class="explain">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores quod excepturi ad quia dignissimos dolore nesciunt officia nemo molestiae, laudantium architecto explicabo illo et, ullam rerum nam quas expedita.</div>
+    <p class="explain">This is a virtual restaurent page built with vanilla JS and webpack. The focus of this project was using ES6 modules and webpack. This project taught me how to use ES6 modules to divide our project into different segments and keep things on the cleaner side.</p>
 </div>
 <div class="thingsUsed">
-    <div class="used-things">HTML | CSS | JAVASCRIPT | API</div>
+    <p class="used-things">HTML | CSS | JAVASCRIPT | WEBPACK </p>
 </div>
 </div>
 <div class="projectCardBtns">
-<button class="projects-btn">Source code</button>
-<button class="projects-btn"id="viewSiteBtn">View website</button>
+<a href="https://github.com/Undisclosed64/restaurent-page"><button class="projects-btn">View code</button></a>
+<a href="https://undisclosed64.github.io/restaurent-page/">
+<button class="projects-btn"id="viewSiteBtn">View live</button>
+</a>
 </div>
 </div>
 
@@ -177,18 +182,22 @@
 
     <div class="project-view">
         <div class="project-name">Library</div>
-    <img src="icons/library.png"class="project-img" alt="">
+    <img src="icons/library.png"class="project-img" alt="virtual-library-img">
 </div>
 <div class="project-description">
-    <div class="explain">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae maxime repellendus, doloribus explicabo sunt eaque ut culpa eveniet reprehenderit voluptatem eum sint consequuntur unde, doloremque tenetur esse ex fugit aliquam.</div>
+    <p class="explain">This project is a virtual library to store books you have read or you plan to read. It lets us store a few information regarding the book and also lets us select whether we have read it or not. The purpose behind this project was to get in and out of how local storage works and how it can be used to store data. It taught me how I can store,fetch and delete data with local storage.</p>
 </div>
 <div class="thingsUsed">
-    <div class="used-things">HTML | CSS | JAVASCRIPT | API</div>
+    <p class="used-things">HTML | CSS | JAVASCRIPT | LOCAL STORAGE</p>
 </div>
 </div>
 <div class="projectCardBtns">
-<button class="projects-btn">Source code</button>
-<button class="projects-btn"id="viewSiteBtn">View website</button>
+<a href="https://github.com/Undisclosed64/library-project">
+    <button class="projects-btn">View code</button>
+</a>
+<a href="https://undisclosed64.github.io/library-project/">
+    <button class="projects-btn"id="viewSiteBtn">View live</button>
+</a>
 </div>
 </div>
 
@@ -198,18 +207,18 @@
 
 <div class="contactContainer">
 <section id="contact">
-    <div class="header">
+    <div class="sub-header">
         <h2 class="contact-header">Contact me</h2>
-        <span class="headerHorizontalLine"></span>
+        <span class="subHeaderHorizontalLine"></span>
     </div>
-    <h1 class="reachOutLine">Reach out for a new project or just say hello  </h1>
+    <h1 class="reachOutLine">Reach out for a new project or just say hello! I'd love to hear from you:)</h1>
 
 <form action="https://formsubmit.co/b24c6bea3a5988c432297cb0feccc3e7" method="POST">
     <div class="sendMsgLine">Send me a message</div>
     <input type="text"placeholder="Your Name"name="name">
     <input type="text"placeholder="Your Email"name="emailID">
     <input type="text"placeholder="Subject"name="subject">
-    <textarea name="message" id="" cols="30" rows="10"></textarea>
+    <textarea name="message"placeholder="Message"id="" cols="10" rows="10"></textarea>
 <button type="submit"id="submitBtn">Let's send!</button>
 </form>
 
@@ -217,8 +226,5 @@
 </div>
 </main>
 
-
-   
-        
 </body>
 </html>
