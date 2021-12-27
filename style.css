@@ -1,6 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Open+Sans:wght@400;500;600;700;800&display=swap");
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,12 +17,16 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: white;
   padding: 1em;
   font-weight: 500;
 }
 #brand-name {
   font-size: 1.3rem;
+}
+.dot {
+  color: #f0a500;
+  font-family: "Fira Mono", monospace;
+  font-size: 35px;
 }
 #brand-name:hover {
   cursor: pointer;
@@ -33,11 +36,6 @@ nav {
 #brand-name:hover .dot {
   color: white;
   transition: color 1s ease-in-out;
-}
-.dot {
-  color: #f0a500;
-  font-family: "Fira Mono", monospace;
-  font-size: 35px;
 }
 .nav-links {
   display: flex;
@@ -60,7 +58,6 @@ nav {
   height: 1px;
   background-color: #fff;
 }
-
 .nav-links li a {
   text-decoration: none;
   padding: 0.6rem;
@@ -81,7 +78,7 @@ nav {
 .toggle-button .bar {
   height: 2px;
   width: 100%;
-  background-color: white;
+  background-color: #fff;
   border-radius: 10px;
 }
 #btnToTop {
@@ -124,7 +121,6 @@ main #home .greeting {
   color: #f0a500;
   margin-bottom: 1em;
 }
-
 #home .name,
 .profession {
   font-size: 1.6rem;
@@ -149,7 +145,6 @@ main #home .greeting {
 #home .verticalLinks #lastVerticalLink {
   margin-bottom: 1.2em;
 }
-
 .fab,
 .far {
   font-size: 14px;
@@ -157,7 +152,6 @@ main #home .greeting {
   border-radius: 50%;
   padding: 8px;
 }
-
 .fa-github,
 .fa-twitter,
 .fa-linkedin-in,
@@ -289,7 +283,8 @@ p {
 }
 .project-img {
   height: auto;
-  width: 260px;
+  /* width: 260px;*/
+  width: 100%;
   margin-bottom: 3em;
   border: 1px solid #222;
 }
@@ -331,10 +326,8 @@ p {
 .projects-btn:hover {
   transform: translate(0, -10px);
 }
-
 .contactContainer {
   background-color: #151515;
-  color: #ffffff;
   padding-top: 3em;
 }
 .contactContainer #contact .contact-header {
