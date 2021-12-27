@@ -214,9 +214,13 @@
 <form action="https://formsubmit.co/b24c6bea3a5988c432297cb0feccc3e7" method="POST">
     <div class="sendMsgLine">Send me a message</div>
     <input type="text"placeholder="Your Name"name="name"required>
-    <input type="email"placeholder="Your Email"name="emailID"required>
+    <input type="mail"placeholder="Your Email"name="emailID"required>
     <input type="text"placeholder="Subject"name="subject">
-    <textarea name="message"placeholder="Message"id="" cols="10" rows="10" required></textarea>
+
+<input type="hidden"name="_next"value="https://tahera.netlify.app/thank-you.html">
+<input type="hidden" name="_captcha" value="false">
+
+    <textarea name="message"placeholder="Message"id="" cols="10" rows="10"></textarea>
 <button type="submit"id="submitBtn">Send Message</button>
 </form>
 </section>
