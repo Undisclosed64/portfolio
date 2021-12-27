@@ -6,6 +6,9 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: #000000;
   color: #ffffff;
@@ -84,8 +87,9 @@ nav {
 #btnToTop {
   display: none;
   position: fixed;
-  bottom: 15px; /* Place the button at the bottom of the page */
+  bottom: 55px; /* Place the button at the bottom of the page */
   right: 10px;
+  opacity: 9;
   z-index: 99;
   border: none;
   outline: none;
@@ -102,7 +106,12 @@ nav {
   justify-content: center;
 }
 main {
-  padding: 2.5em 0 4em 0;
+  padding: 2.5em 0 0em 0;
+}
+nav,
+#home {
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
 }
 main #home,
 #about,
@@ -115,6 +124,7 @@ main #home .greeting {
   color: #f0a500;
   margin-bottom: 1em;
 }
+
 #home .name,
 .profession {
   font-size: 1.6rem;
@@ -178,6 +188,11 @@ p {
   font-size: 1rem;
   background-color: #000000;
   color: #f0a500;
+  transition: transform ease-in-out 0.3s;
+}
+#btnContact:hover {
+  transform: scaleX(1.1);
+  transform-origin: left;
 }
 #about .sub-header,
 #projects .sub-header,
@@ -207,9 +222,11 @@ p {
   margin: 3em 0 3em 0;
   border: 10px solid #f0a500;
   border-radius: 5px;
+  transition: 0.3s;
 }
 .svgGirl img:hover {
   border-color: violet !important;
+  transform: translate(20px, -20px);
 }
 #about .skills-intro {
   margin-bottom: 4em;
@@ -303,6 +320,7 @@ p {
   color: white;
   border-radius: 4px;
   text-transform: capitalize;
+  transition: 0.3s;
 }
 #viewSiteBtn {
   background-color: #f0a500;
@@ -310,6 +328,10 @@ p {
   margin-left: 0.5em;
   border: 1px solid #f0a500;
 }
+.projects-btn:hover {
+  transform: translate(0, -10px);
+}
+
 .contactContainer {
   background-color: #151515;
   color: #ffffff;
@@ -359,11 +381,32 @@ textarea:focus {
 #contact form #submitBtn {
   padding: 1em;
   margin: 1em;
-  background-color: #f0a500;
+  background-color: #f09000;
   text-transform: capitalize;
   border: none;
+  transition: 0.4s;
+  border-radius: 4px;
+  font-weight: 500;
 }
+#submitBtn:hover {
+  transform: translate(0, -20px);
+}
+footer {
+  font-family: "Fira Mono", monospace;
+  color: #eee;
+  display: flex;
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
 @media (min-width: 400px) {
+  #btnToTop {
+    bottom: 10px;
+  }
   main #home,
   #about,
   #projects,
@@ -379,7 +422,6 @@ textarea:focus {
     padding: 1em;
   }
   .project-img {
-    /* width: 320px;*/
     width: 100%;
   }
   .project-name {
@@ -521,7 +563,7 @@ textarea:focus {
   }
   main #home {
     padding-bottom: 10em;
-    padding-right: 7em; /*+*/
+    padding-right: 7em;
   }
   #home .elaborateIntro {
     max-width: 600px;

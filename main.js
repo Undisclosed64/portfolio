@@ -6,12 +6,12 @@ toggleButton.addEventListener("click",() => {
 navbarLinks.classList.toggle('active');
 })
 
-//Get the button
-var buttonUp = document.getElementById("btnToTop");
-// When the user scrolls down 20px from the top of the document, show the button
+//Get the to top button
+const buttonUp = document.getElementById("btnToTop");
+// When the user scrolls down 60px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
+ scrollFunction = () => {
   if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
     buttonUp.style.display = "block";
   } else {
@@ -19,7 +19,25 @@ function scrollFunction() {
   }
 }
 // When the user clicks on the button, scroll to the top of the document
-function topFunction() {
+ topFunction = () => {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+//fade in animation for home section
+const home = document.querySelector('#home');
+const nav = document.querySelector('nav');
+
+window.onload = () => {
+  nav.style.opacity = "1";
+  home.style.opacity="1";
+
+}
+
+
+
+
+
+
+
+
