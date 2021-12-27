@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank you page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Raleway:400,600,900');
+
+*{
+  box-sizing:border-box;
+}
+body{
+        background-color:#f09000;
+        height: 100%;
+        margin: 0;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.30s linear 0s;
+}
+.wrapper-1{
+  width:100%;
+  height:100vh;
+  display: flex;
+flex-direction: column;
+}
+.wrapper-2{
+  padding: 30px;
+  text-align:center;
+}
+h1{
+  font-size:4em;
+  font-weight: 900;
+  letter-spacing:3px;
+  color: #fafafa;
+  margin:0;
+  margin-top: 40px;
+  margin-bottom:40px;
+}
+.wrapper-2 p{
+  margin:0;
+  font-size:1.3em;
+  color:#fafafa;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing:1px;
+  line-height: 1.5;
+}
+.go-home{
+  background: #e83890;
+  border:none;
+  padding: 25px 30px;
+  margin: 30px 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.go-home a{
+  font-size: 1rem;
+  font-weight: 700!important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  
+}
+
+@media (min-width:360px){
+  h1{
+    font-size:4.5em;
+  }
+  .go-home{
+    margin-bottom:20px;
+  }
+}
+
+@media (min-width:600px){
+  .thankyoucontent{
+  max-width:1000px;
+  margin:0 auto;
+}
+  .wrapper-1{
+  height: initial;
+  max-width:620px;
+  margin:0 auto;
+  margin-top:50px;
+  }
+  
+}
+    </style>
+</head>
+<body>
+    <div class=thankyoucontent>
+        <div class="wrapper-1">
+           <div class="wrapper-2">
+              <img src="https://i.ibb.co/Lkn7rkG/thank-you-envelope.png" alt="thank-you-envelope" border="0">
+            <h1>Thank you!</h1>
+             <p>for contacting me. You're awesome. <i>Seriously</i>.</p>
+            <p> I promise I will reply shortly!</p> 
+             <button class="go-home"><a href="http://127.0.0.1:5500/portfolio/index.html">
+               home page</a>
+             </button>
+           </div>
+       
+           <!--Source:https://codepen.io/asthaf/pen/KKKQYOq-->
+</body>
+</html>
