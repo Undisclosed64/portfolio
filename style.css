@@ -44,28 +44,9 @@ nav {
 .nav-links li {
   list-style: none;
 }
-/*
-.nav-links li a:after {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 1px;
-  display: block;
-  transition: all 0.3s ease;
-  top: 13.5%;
-}*/
-/*.nav-links li a:hover::after {
-  width: 62px;
-  height: 1px;
-  background-color: #fff;
+.nav-links li:hover {
+  color: #f0a500;
 }
-.nav-links li a {
-  text-decoration: none;
-  padding: 0.6rem;
-  display: block;
-  color: white;
-  transition: all 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
-}*/
 .nav-links li a {
   text-decoration: none;
   padding: 0.6rem;
@@ -197,10 +178,6 @@ p {
   color: #00c5c8;
   transition: transform ease-in-out 0.3s;
 }
-/*#btnContact:hover {
-  transform: scaleX(1.1);
-  transform-origin: left;
-}*/
 #about,
 #projects,
 #contact {
@@ -269,6 +246,22 @@ p {
   border: 2px solid #f0a500;
   border-radius: 50%;
 }
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
 .fa-code-branch {
   border: 1px solid #f0a500;
   width: 2em;
@@ -282,9 +275,15 @@ p {
   font-size: 3rem;
   padding: 20px;
   border-color: #f0a500;
+  -webkit-animation: spin 2s linear infinite;
+  -moz-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
 }
 .card-wrapper .card .icon-wrapper #skillsSectionGithubIcon {
   color: #f0a500 !important;
+  -webkit-animation: spin 5s linear infinite;
+  -moz-animation: spin 5s linear infinite;
+  animation: spin 5s linear infinite;
 }
 #about .skills .card-wrapper .card .skillName-wrapper {
   text-align: center;
@@ -304,6 +303,9 @@ p {
   background-color: #042125;
   padding: 0.5em;
   border-radius: 2px;
+}
+#libraryProject {
+  margin-top: 5.5em;
 }
 .project-wrapper .project-view {
   display: flex;
@@ -411,9 +413,6 @@ textarea:focus {
   border-radius: 4px;
   font-weight: 500;
 }
-#submitBtn:hover {
-  transform: translate(0, -20px);
-}
 footer {
   display: flex;
   flex-direction: column;
@@ -422,7 +421,7 @@ footer {
   padding: 1.2em;
   font-family: "Fira Mono", monospace;
   background-color: #000000;
-  color: #ffffff;
+  color: #f0a500;
 }
 .footer-icons {
   display: flex;
@@ -436,6 +435,7 @@ footer {
 .footer-icons li a i {
   font-size: 18px;
   border: none;
+  color: #f0a500;
 }
 @media (min-width: 400px) {
   #btnToTop {
@@ -659,6 +659,9 @@ footer {
   }
   .projects-btn:hover {
     transform: translate(0, -10px);
+  }
+  #submitBtn:hover {
+    transform: translate(0, -20px);
   }
   .thingsUsed {
     display: flex;
