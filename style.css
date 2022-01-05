@@ -301,8 +301,7 @@ p {
   margin-bottom: 6em;
 }
 .project-wrapper {
-  background-color: rgb(10, 10, 10);
-  opacity: 0.9;
+  background-color: #042125;
   padding: 0.5em;
   border-radius: 2px;
 }
@@ -361,8 +360,11 @@ p {
   margin-bottom: 1.8em;
 }
 .contactContainer #contact .reachOutLine {
-  font-size: 1.5rem;
-  font-weight: normal;
+  font-size: 2rem;
+  font-weight: 600;
+  font-style: italic;
+  text-align: center;
+  color: #f0a500;
 }
 .contactContainer #contact form {
   background-color: #000000;
@@ -370,7 +372,8 @@ p {
   flex-direction: column;
   justify-content: center;
   padding: 1em;
-  margin-top: 1.5em;
+  margin-top: 3em;
+  border-radius: 10px;
 }
 #contact form .sendMsgLine {
   text-align: center;
@@ -412,18 +415,28 @@ textarea:focus {
   transform: translate(0, -20px);
 }
 footer {
-  font-family: "Fira Mono", monospace;
-  color: #eee;
   display: flex;
-  font-size: 1rem;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px;
-  padding-top: 35px;
-  padding-bottom: 35px;
+  padding: 1.2em;
+  font-family: "Fira Mono", monospace;
   background-color: #000000;
+  color: #ffffff;
 }
-
+.footer-icons {
+  display: flex;
+  flex-direction: row;
+}
+.footer-icons li {
+  list-style: none;
+  margin: 0.2em;
+  padding-bottom: 1em;
+}
+.footer-icons li a i {
+  font-size: 18px;
+  border: none;
+}
 @media (min-width: 400px) {
   #btnToTop {
     bottom: 10px;
@@ -484,6 +497,13 @@ footer {
 @media (min-width: 470px) {
   .nav-links li a {
     padding: 1em;
+  }
+  footer {
+    padding: 1.5em;
+  }
+  .footer-icons li {
+    margin: 1em;
+    padding-bottom: 0.5em;
   }
 }
 
