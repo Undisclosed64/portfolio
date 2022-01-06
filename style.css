@@ -17,9 +17,14 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em;
+  padding: 0.8em;
   font-weight: 500;
   background-color: #000000;
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  opacity: 0.8;
+  background-attachment: scroll;
 }
 #brand-name {
   font-size: 1.3rem;
@@ -98,7 +103,7 @@ main {
 }
 main #home {
   background: url("images/shutterstock_img.jpg");
-  padding-top: 2.5em !important;
+  padding-top: 8em !important;
   background-size: cover;
   background-position: top !important;
 }
@@ -107,11 +112,6 @@ main #home,
 #projects,
 #contact {
   padding: 0 1.1em 8em 1.1em;
-}
-main #home .greeting {
-  font-family: "Fira Mono", monospace;
-  color: #f0a500;
-  margin-bottom: 1em;
 }
 #home .name {
   background-image: linear-gradient(
@@ -531,6 +531,9 @@ footer {
 }
 
 @media (min-width: 568px) {
+  main #home {
+    padding-top: 10em !important;
+  }
   #brand-name {
     font-size: 1.5rem;
     font-weight: 800;
@@ -731,8 +734,6 @@ footer {
   #about .svgGirl img {
     margin-left: 3em;
   }
-}
-@media (min-width: 1136px) {
 }
 @media (min-width: 1200px) {
   #about .skills .card-wrapper .card {
