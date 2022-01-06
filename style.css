@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -22,6 +23,8 @@ nav {
 }
 #brand-name {
   font-size: 1.3rem;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 3px;
 }
 .dot {
   color: #f0a500;
@@ -93,16 +96,11 @@ nav {
 main {
   padding: 0 0 0em 0;
 }
-/* for fade in effect on load*/
-main nav,
-#home {
-  opacity: 0;
-  transition: opacity 3s ease-in-out;
-}
 main #home {
   background: url("images/shutterstock_img.jpg");
   padding-top: 2.5em !important;
-  background-size: cover !important;
+  background-size: cover;
+  background-position: top !important;
 }
 main #home,
 #about,
@@ -112,8 +110,33 @@ main #home,
 }
 main #home .greeting {
   font-family: "Fira Mono", monospace;
-  color: #00c5c8;
+  color: #f0a500;
   margin-bottom: 1em;
+}
+#home .name {
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #f0a500 15%,
+    #9055cf 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
 #home .name,
 .profession {
@@ -171,11 +194,11 @@ p {
   padding: 1.1em;
   width: 15em;
   font-family: "Fira Mono", monospace;
-  border: 1px solid #00c5c8;
+  border: 1px solid #f0a500;
   border-radius: 3px;
   font-size: 1rem;
   background-color: #000000;
-  color: #00c5c8;
+  color: #f0a500;
   transition: transform ease-in-out 0.3s;
 }
 #about,
@@ -302,7 +325,7 @@ p {
 .project-wrapper {
   background-color: #042125;
   padding: 0.5em;
-  border-radius: 2px;
+  border-radius: 10px;
 }
 #libraryProject {
   margin-top: 5.5em;
