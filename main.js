@@ -24,15 +24,6 @@ window.onscroll = function() {scrollFunction()};
   document.documentElement.scrollTop = 0;
 }
 
-//fade in animation for home section
-const home = document.querySelector('#home');
-const nav = document.querySelector('nav');
-
-window.onload = () => {
-  nav.style.opacity = "1";
-  home.style.opacity="1";
-
-}
 
 
 
