@@ -13,6 +13,9 @@ body {
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
 }
+font-face {
+  font-display: swap;
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -97,6 +100,9 @@ nav {
 #btnToTop i {
   display: flex;
   justify-content: center;
+}
+button {
+  cursor: pointer;
 }
 main {
   padding: 0 0 0em 0;
