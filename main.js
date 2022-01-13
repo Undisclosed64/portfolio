@@ -5,7 +5,10 @@ const navbarLinks = document.querySelector('.nav-links');
 toggleButton.addEventListener("click",() => {
 navbarLinks.classList.toggle('active');
 })
-
+//close navbar on link click
+navbarLinks.addEventListener("click",function(){
+  navbarLinks.classList.toggle('active');
+})
 //Get the to top button
 const buttonUp = document.getElementById("btnToTop");
 // When the user scrolls down 60px from the top of the document, show the button
