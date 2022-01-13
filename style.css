@@ -26,7 +26,7 @@ nav {
   position: fixed;
   width: 100%;
   overflow: hidden;
-  opacity: 0.8;
+  opacity: 0.6;
   background-attachment: scroll;
 }
 #brand-name {
