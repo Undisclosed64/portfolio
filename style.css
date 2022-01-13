@@ -26,7 +26,7 @@ nav {
   position: fixed;
   width: 100%;
   overflow: hidden;
-  opacity: 0.6;
+  opacity: 0.8;
   background-attachment: scroll;
 }
 #brand-name {
@@ -193,7 +193,7 @@ p {
 }
 #home .elaborateIntro {
   margin-top: 1em;
-  color: wheat !important;
+  color: rgb(223, 215, 215) !important;
 }
 #home #btnContact {
   margin-top: 2.5em;
