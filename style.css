@@ -332,9 +332,7 @@ p {
   padding: 0.5em;
   border-radius: 10px;
 }
-#libraryProject {
-  margin-top: 5.5em;
-}
+
 .project-wrapper .project-view {
   display: flex;
   align-items: center;
