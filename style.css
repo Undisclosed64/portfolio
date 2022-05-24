@@ -133,7 +133,8 @@ main #home,
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
+/*   added here animation direction property  */
+  animation: textclip 2s linear infinite alternate-reverse;
   display: inline-block;
 }
 
