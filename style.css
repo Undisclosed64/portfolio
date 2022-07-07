@@ -137,6 +137,8 @@ main #home,
   display: inline-block;
 }
 
+/* Text Animation */
+
 @keyframes textclip {
   to {
     background-position: 200% center;
@@ -439,6 +441,9 @@ textarea:focus {
   border-radius: 4px;
   font-weight: 500;
 }
+
+/* footer */
+
 footer {
   display: flex;
   flex-direction: column;
@@ -463,6 +468,9 @@ footer {
   border: none;
   color: #f0a500;
 }
+
+/* Screen Responsive */
+
 @media (min-width: 400px) {
   #btnToTop {
     bottom: 10px;
