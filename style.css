@@ -689,12 +689,7 @@ footer {
   .project-wrapper {
     padding: 2em;
   }
-  .projects-btn:hover {
-    transform: translate(0, -10px);
-  }
-  #submitBtn:hover {
-    transform: translate(0, -20px);
-  }
+
   .thingsUsed {
     display: flex;
     justify-content: center;
