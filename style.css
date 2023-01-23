@@ -303,15 +303,15 @@ p {
   font-size: 3rem;
   padding: 20px;
   border-color: #f0a500;
-  -webkit-animation: spin 2s linear infinite;
+  /* -webkit-animation: spin 2s linear infinite;
   -moz-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite; */
 }
 .card-wrapper .card .icon-wrapper #skillsSectionGithubIcon {
   color: #f0a500 !important;
-  -webkit-animation: spin 5s linear infinite;
+  /* -webkit-animation: spin 5s linear infinite;
   -moz-animation: spin 5s linear infinite;
-  animation: spin 5s linear infinite;
+  animation: spin 5s linear infinite; */
 }
 #about .skills .card-wrapper .card .skillName-wrapper {
   text-align: center;
