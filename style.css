@@ -156,6 +156,8 @@ main #home,
   left: 2em;
   top: 19em;
   line-height: 4em;
+  top: 0em; 
+  line-height: 3em;
   display: none;
 }
 #home .verticalLinks li {
@@ -651,6 +653,8 @@ footer {
   }
   #home .verticalLinks {
     display: flex;
+    position: fixed;
+    bottom: 0;
   }
   main #about {
     padding-right: 2em;
